@@ -1,0 +1,19 @@
+<p>
+  <strong>Olá Teilor</strong>
+  <br />
+  Ag.: 1234 Op.: 13 CC: 2112-8
+</p>
+
+<p>
+  Poup.: R$ {{ getSavings.toFixed(2) }}
+  <br />
+  <input type="text" #withdraw />
+  <button (click)="setWithdraw(withdraw.value)">Retirar</button>
+</p>
+
+<p>
+  Carteira: R$ {{ getWallet.toFixed(2) }}
+  <br />
+  <input type="text" #deposit />
+  <button (click)="setDeposit(deposit.value)">Depositar</button>
+</p>
