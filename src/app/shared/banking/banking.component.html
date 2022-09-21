@@ -5,15 +5,21 @@
 </p>
 
 <p>
-  Poup.: R$ {{ getSavings.toFixed(2) }}
+  Poup.: R$
+  <span id="poup-label">{{ getSavings.toFixed(2) }}</span>
   <br />
-  <input type="text" #withdraw />
-  <button (click)="setWithdraw(withdraw.value)">Retirar</button>
+  <input id="input-withdraw" type="text" #withdraw />
+  <button id="withdraw-button" (click)="setWithdraw(withdraw.value)">
+    Retirar
+  </button>
 </p>
 
 <p>
-  Carteira: R$ {{ getWallet.toFixed(2) }}
+  Carteira: R$
+  <span id="wallet-label">{{ getWallet.toFixed(2) }}</span>
   <br />
-  <input type="text" #deposit />
-  <button (click)="setDeposit(deposit.value)">Depositar</button>
+  <input id="input-deposit" type="text" #deposit />
+  <button id="deposit-button" (click)="setDeposit(deposit.value)">
+    Depositar
+  </button>
 </p>
