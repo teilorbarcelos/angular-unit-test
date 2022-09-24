@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing'
 import { TestBed } from '@angular/core/testing'
 import { RouterTestingModule } from '@angular/router/testing'
 import { AppComponent } from './app.component'
@@ -7,7 +8,7 @@ import { ListComponent } from './shared/investiments/components/list/list.compon
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, HttpClientTestingModule],
       declarations: [AppComponent, BankingComponent, ListComponent],
     }).compileComponents()
   })
